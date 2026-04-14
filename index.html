@@ -1,5 +1,3 @@
-Web
-
 <!DOCTYPE html>
 
 <html lang="es">
@@ -28,12 +26,12 @@ Web
     --radius-sm: 10px;
   }
 
-- { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-font-family: ‘DM Sans’, sans-serif;
-background: var(–paper);
-color: var(–ink);
+font-family: 'DM Sans', sans-serif;
+background: var(--paper);
+color: var(--ink);
 min-height: 100vh;
 font-size: 16px;
 line-height: 1.6;
@@ -42,8 +40,8 @@ line-height: 1.6;
 
 /* ── TOP BAR ── */
 header {
-background: var(–ink);
-color: var(–paper);
+background: var(--ink);
+color: var(--paper);
 padding: 0 20px;
 height: 56px;
 display: flex;
@@ -55,15 +53,15 @@ z-index: 100;
 }
 
 .logo {
-font-family: ‘Playfair Display’, serif;
+font-family: 'Playfair Display', serif;
 font-size: 1.25rem;
 font-weight: 900;
 letter-spacing: -0.5px;
 }
-.logo span { color: var(–accent); }
+.logo span { color: var(--accent); }
 
 .badge {
-background: var(–accent);
+background: var(--accent);
 color: #fff;
 font-size: 0.68rem;
 font-weight: 600;
@@ -84,14 +82,14 @@ to   { opacity: 1; transform: translateY(0); }
 
 /* ── HOME / MENU ── */
 .home-hero {
-background: var(–ink);
-color: var(–paper);
+background: var(--ink);
+color: var(--paper);
 padding: 36px 20px 32px;
 text-align: center;
 }
 
 .home-hero h1 {
-font-family: ‘Playfair Display’, serif;
+font-family: 'Playfair Display', serif;
 font-size: 2rem;
 font-weight: 900;
 line-height: 1.15;
@@ -110,13 +108,13 @@ font-size: 0.72rem;
 font-weight: 600;
 letter-spacing: 1.5px;
 text-transform: uppercase;
-color: var(–muted);
+color: var(--muted);
 padding: 24px 20px 10px;
 }
 
 .topic-card {
-background: var(–card);
-border-radius: var(–radius);
+background: var(--card);
+border-radius: var(--radius);
 margin: 0 16px 10px;
 padding: 16px 18px;
 display: flex;
@@ -124,15 +122,15 @@ align-items: center;
 gap: 14px;
 cursor: pointer;
 border: 1.5px solid transparent;
-box-shadow: var(–shadow);
+box-shadow: var(--shadow);
 transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
 -webkit-tap-highlight-color: transparent;
 }
 
 .topic-card:active, .topic-card:hover {
-border-color: var(–accent2);
+border-color: var(--accent2);
 transform: translateY(-2px);
-box-shadow: var(–shadow-lg);
+box-shadow: var(--shadow-lg);
 }
 
 .topic-icon {
@@ -156,11 +154,11 @@ text-overflow: ellipsis;
 }
 .topic-cat {
 font-size: 0.75rem;
-color: var(–muted);
+color: var(--muted);
 margin-top: 2px;
 }
 
-.chevron { color: var(–muted); font-size: 1.1rem; }
+.chevron { color: var(--muted); font-size: 1.1rem; }
 
 /* ── TOPIC VIEW ── */
 .back-btn {
@@ -170,7 +168,7 @@ gap: 6px;
 padding: 14px 20px;
 font-size: 0.9rem;
 font-weight: 500;
-color: var(–accent2);
+color: var(--accent2);
 cursor: pointer;
 border: none;
 background: none;
@@ -182,8 +180,8 @@ padding: 0 20px 24px;
 
 .topic-header .category-pill {
 display: inline-block;
-background: var(–cream);
-color: var(–muted);
+background: var(--cream);
+color: var(--muted);
 font-size: 0.72rem;
 font-weight: 600;
 letter-spacing: 1px;
@@ -194,7 +192,7 @@ margin-bottom: 10px;
 }
 
 .topic-header h2 {
-font-family: ‘Playfair Display’, serif;
+font-family: 'Playfair Display', serif;
 font-size: 1.7rem;
 font-weight: 900;
 line-height: 1.2;
@@ -202,12 +200,12 @@ margin-bottom: 6px;
 }
 
 .explanation-card {
-background: var(–card);
-border-radius: var(–radius);
+background: var(--card);
+border-radius: var(--radius);
 margin: 0 16px 20px;
 padding: 20px;
-box-shadow: var(–shadow);
-border-left: 4px solid var(–accent2);
+box-shadow: var(--shadow);
+border-left: 4px solid var(--accent2);
 }
 
 .explanation-card h3 {
@@ -215,7 +213,7 @@ font-size: 0.78rem;
 font-weight: 600;
 letter-spacing: 1px;
 text-transform: uppercase;
-color: var(–accent2);
+color: var(--accent2);
 margin-bottom: 10px;
 }
 
@@ -238,8 +236,8 @@ line-height: 1.6;
 }
 
 .examples-block {
-background: var(–cream);
-border-radius: var(–radius-sm);
+background: var(--cream);
+border-radius: var(--radius-sm);
 padding: 14px 16px;
 margin-top: 14px;
 }
@@ -248,7 +246,7 @@ margin-top: 14px;
 font-size: 0.78rem;
 letter-spacing: 0.5px;
 text-transform: uppercase;
-color: var(–muted);
+color: var(--muted);
 display: block;
 margin-bottom: 8px;
 }
@@ -257,7 +255,7 @@ margin-bottom: 8px;
 display: block;
 font-style: italic;
 font-size: 0.9rem;
-color: var(–ink);
+color: var(--ink);
 margin-bottom: 4px;
 }
 
@@ -270,11 +268,11 @@ gap: 10px;
 width: calc(100% - 32px);
 margin: 0 16px 24px;
 padding: 18px;
-background: var(–accent);
+background: var(--accent);
 color: #fff;
 border: none;
-border-radius: var(–radius);
-font-family: ‘DM Sans’, sans-serif;
+border-radius: var(--radius);
+font-family: 'DM Sans', sans-serif;
 font-size: 1rem;
 font-weight: 600;
 cursor: pointer;
@@ -299,8 +297,8 @@ padding: 36px 20px;
 
 .spinner {
 width: 40px; height: 40px;
-border: 3px solid var(–cream);
-border-top-color: var(–accent);
+border: 3px solid var(--cream);
+border-top-color: var(--accent);
 border-radius: 50%;
 animation: spin 0.8s linear infinite;
 }
@@ -309,7 +307,7 @@ animation: spin 0.8s linear infinite;
 
 .loader-text {
 font-size: 0.9rem;
-color: var(–muted);
+color: var(--muted);
 font-style: italic;
 }
 
@@ -324,14 +322,14 @@ margin-bottom: 16px;
 }
 
 .exercises-header h3 {
-font-family: ‘Playfair Display’, serif;
+font-family: 'Playfair Display', serif;
 font-size: 1.2rem;
 font-weight: 700;
 }
 
 .ex-count {
-background: var(–ink);
-color: var(–paper);
+background: var(--ink);
+color: var(--paper);
 font-size: 0.72rem;
 font-weight: 600;
 padding: 2px 9px;
@@ -339,61 +337,61 @@ border-radius: 20px;
 }
 
 .exercise-card {
-background: var(–card);
-border-radius: var(–radius);
+background: var(--card);
+border-radius: var(--radius);
 padding: 18px;
 margin-bottom: 14px;
-box-shadow: var(–shadow);
+box-shadow: var(--shadow);
 border: 1.5px solid transparent;
 transition: border-color 0.25s;
 }
 
-.exercise-card.correct { border-color: var(–green); }
-.exercise-card.incorrect { border-color: var(–red); }
+.exercise-card.correct { border-color: var(--green); }
+.exercise-card.incorrect { border-color: var(--red); }
 
 .ex-number {
 font-size: 0.72rem;
 font-weight: 700;
 letter-spacing: 1px;
 text-transform: uppercase;
-color: var(–muted);
+color: var(--muted);
 margin-bottom: 8px;
 }
 
 .ex-phrase {
 font-size: 0.97rem;
 line-height: 1.65;
-color: var(–ink);
+color: var(--ink);
 margin-bottom: 14px;
 font-weight: 500;
 }
 
 .ex-blank {
 display: inline-block;
-background: var(–cream);
-border-bottom: 2px solid var(–ink);
+background: var(--cream);
+border-bottom: 2px solid var(--ink);
 padding: 0 6px;
 min-width: 80px;
 font-style: italic;
-color: var(–muted);
+color: var(--muted);
 }
 
 .ex-input {
 width: 100%;
 padding: 12px 14px;
-border: 1.5px solid var(–border);
-border-radius: var(–radius-sm);
-font-family: ‘DM Sans’, sans-serif;
+border: 1.5px solid var(--border);
+border-radius: var(--radius-sm);
+font-family: 'DM Sans', sans-serif;
 font-size: 0.95rem;
-background: var(–paper);
-color: var(–ink);
+background: var(--paper);
+color: var(--ink);
 transition: border-color 0.15s;
 outline: none;
 }
 
-.ex-input:focus { border-color: var(–accent2); }
-.ex-input.correct { border-color: var(–green); background: #edf7f1; }
-.ex-input.incorrect { border-color: var(–red); background: #fdf0ee; }
+.ex-input:focus { border-color: var(--accent2); }
+.ex-input.correct { border-color: var(--green); background: #edf7f1; }
+.ex-input.incorrect { border-color: var(--red); background: #fdf0ee; }
 
 .result-badge {
 display: inline-flex;
@@ -406,12 +404,12 @@ border-radius: 20px;
 margin-top: 10px;
 }
 
-.result-badge.correct { background: #edf7f1; color: var(–green); }
-.result-badge.incorrect { background: #fdf0ee; color: var(–red); }
+.result-badge.correct { background: #edf7f1; color: var(--green); }
+.result-badge.incorrect { background: #fdf0ee; color: var(--red); }
 
 .explanation-bubble {
-background: var(–cream);
-border-radius: var(–radius-sm);
+background: var(--cream);
+border-radius: var(--radius-sm);
 padding: 12px 14px;
 margin-top: 12px;
 font-size: 0.87rem;
@@ -424,7 +422,7 @@ display: none;
 
 .explanation-bubble .correct-answer {
 font-weight: 700;
-color: var(–green);
+color: var(--green);
 }
 
 /* ── CHECK BUTTON ── */
@@ -435,11 +433,11 @@ justify-content: center;
 gap: 8px;
 width: 100%;
 padding: 16px;
-background: var(–ink);
-color: var(–paper);
+background: var(--ink);
+color: var(--paper);
 border: none;
-border-radius: var(–radius);
-font-family: ‘DM Sans’, sans-serif;
+border-radius: var(--radius);
+font-family: 'DM Sans', sans-serif;
 font-size: 0.97rem;
 font-weight: 600;
 cursor: pointer;
@@ -453,9 +451,9 @@ transition: opacity 0.15s, transform 0.15s;
 
 /* ── SCORE ── */
 .score-card {
-background: var(–ink);
-color: var(–paper);
-border-radius: var(–radius);
+background: var(--ink);
+color: var(--paper);
+border-radius: var(--radius);
 padding: 22px;
 margin-bottom: 20px;
 text-align: center;
@@ -464,22 +462,22 @@ display: none;
 
 .score-card.visible { display: block; }
 .score-card .score-num {
-font-family: ‘Playfair Display’, serif;
+font-family: 'Playfair Display', serif;
 font-size: 3rem;
 font-weight: 900;
-color: var(–gold);
+color: var(--gold);
 }
 .score-card .score-label { font-size: 0.9rem; color: #b8b4ab; margin-top: 4px; }
 
 /* ── ERROR ── */
 .error-box {
 background: #fdf0ee;
-border: 1.5px solid var(–red);
-border-radius: var(–radius);
+border: 1.5px solid var(--red);
+border-radius: var(--radius);
 padding: 16px;
 margin: 0 16px 20px;
 font-size: 0.9rem;
-color: var(–red);
+color: var(--red);
 display: none;
 }
 .error-box.visible { display: block; }
@@ -499,7 +497,7 @@ backdrop-filter: blur(4px);
 .modal-overlay.hidden { display: none; }
 
 .modal-sheet {
-background: var(–card);
+background: var(--card);
 border-radius: 24px 24px 0 0;
 padding: 28px 24px 40px;
 width: 100%;
@@ -515,13 +513,13 @@ to   { transform: translateY(0); }
 .modal-handle {
 width: 40px;
 height: 4px;
-background: var(–border);
+background: var(--border);
 border-radius: 2px;
 margin: 0 auto 20px;
 }
 
 .modal-sheet h2 {
-font-family: ‘Playfair Display’, serif;
+font-family: 'Playfair Display', serif;
 font-size: 1.4rem;
 font-weight: 800;
 margin-bottom: 8px;
@@ -529,7 +527,7 @@ margin-bottom: 8px;
 
 .modal-sheet p {
 font-size: 0.9rem;
-color: var(–muted);
+color: var(--muted);
 margin-bottom: 20px;
 line-height: 1.6;
 }
@@ -537,26 +535,26 @@ line-height: 1.6;
 .api-input {
 width: 100%;
 padding: 14px 16px;
-border: 1.5px solid var(–border);
-border-radius: var(–radius-sm);
-font-family: ‘DM Sans’, sans-serif;
+border: 1.5px solid var(--border);
+border-radius: var(--radius-sm);
+font-family: 'DM Sans', sans-serif;
 font-size: 0.9rem;
-background: var(–paper);
-color: var(–ink);
+background: var(--paper);
+color: var(--ink);
 margin-bottom: 16px;
 outline: none;
 }
 
-.api-input:focus { border-color: var(–accent2); }
+.api-input:focus { border-color: var(--accent2); }
 
 .modal-save-btn {
 width: 100%;
 padding: 16px;
-background: var(–accent2);
+background: var(--accent2);
 color: #fff;
 border: none;
-border-radius: var(–radius);
-font-family: ‘DM Sans’, sans-serif;
+border-radius: var(--radius);
+font-family: 'DM Sans', sans-serif;
 font-size: 1rem;
 font-weight: 600;
 cursor: pointer;
@@ -564,7 +562,7 @@ cursor: pointer;
 
 .api-note {
 font-size: 0.78rem;
-color: var(–muted);
+color: var(--muted);
 text-align: center;
 margin-top: 12px;
 line-height: 1.5;
@@ -573,7 +571,7 @@ line-height: 1.5;
 .settings-btn {
 background: none;
 border: none;
-color: var(–paper);
+color: var(--paper);
 font-size: 1.2rem;
 cursor: pointer;
 padding: 6px;
@@ -1221,76 +1219,230 @@ async function generateExercises() {
 
   const prompt = `Actúa como un examinador de Cambridge. Genera 5 ejercicios de inglés nivel B2 First sobre este tema específico: ${currentTopic.name}. Devuelve ÚNICA Y EXCLUSIVAMENTE un JSON válido con un array de 5 objetos. Cada objeto debe tener exactamente estas claves: 1. 'phrase': La frase del ejercicio con un hueco representado por '___'. 2. 'correct_answer': La respuesta correcta. 3. 'explanation': Una breve explicación en español de por qué es correcta y si hay alguna regla gramatical clave.`;
 
-  // ── Endpoint estable v1 con gemini-1.5-flash ──
-  const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-
   try {
-    const response = await fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [{ text: prompt }]
-          }
-        ],
-        generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 2000
-        }
-      })
+    const API_HOST = 'https://generativelanguage.googleapis.com';
+    const API_VERSIONS = ['v1beta', 'v1'];
+    const PREFERRED_MODELS = [
+      { version: 'v1beta', model: 'gemini-flash-latest' },
+      { version: 'v1beta', model: 'gemini-2.0-flash-lite' },
+      { version: 'v1beta', model: 'gemini-2.0-flash' },
+      { version: 'v1', model: 'gemini-2.0-flash-lite' },
+      { version: 'v1', model: 'gemini-2.0-flash' }
+    ];
+    const FALLBACK_MODELS = [
+      'gemini-flash-latest',
+      'gemini-2.5-flash-lite',
+      'gemini-2.5-flash',
+      'gemini-2.0-flash-lite-001',
+      'gemini-2.0-flash-001',
+      'gemini-2.0-flash',
+      'gemini-2.0-flash-lite',
+      'gemini-1.5-flash-latest',
+      'gemini-1.5-flash',
+      'gemini-pro'
+    ];
+    const API_KEY_HEADERS = {
+      'Content-Type': 'application/json',
+      'X-goog-api-key': apiKey
+    };
+
+    const triedKeys = new Set();
+    const candidates = [];
+    let lastError = null;
+    let exercises = null;
+    let quotaHits = 0;
+
+    const isTextModel = modelName => {
+      const lower = modelName.toLowerCase();
+      const blockedTags = [
+        'image',
+        'tts',
+        'embedding',
+        'aqa',
+        'vision',
+        'live',
+        'realtime',
+        'preview-image',
+        'preview-tts'
+      ];
+
+      if (!lower.includes('flash') && !lower.includes('pro')) return false;
+      return !blockedTags.some(tag => lower.includes(tag));
+    };
+
+    const enqueueCandidate = (version, model, source) => {
+      if (!model) return;
+      const key = `${version}:${model}`;
+      if (triedKeys.has(key)) return;
+      triedKeys.add(key);
+      candidates.push({ version, model, source });
+    };
+
+    // 0) Prioridad para alias estable recomendado por AI Studio
+    PREFERRED_MODELS.forEach(({ version, model }) => {
+      enqueueCandidate(version, model, 'preferred');
     });
 
-    // ── Manejo de errores HTTP ──
-    if (!response.ok) {
-      const errData = await response.json().catch(() => ({}));
-      const status = response.status;
-      const apiMessage = errData?.error?.message || '';
+    // 1) Descubrir modelos reales disponibles para esta API key
+    for (const version of API_VERSIONS) {
+      const LIST_URL = `${API_HOST}/${version}/models`;
+      console.log(`[Gemini] Consultando modelos disponibles en ${version}...`);
 
-      if (status === 429 || apiMessage.toLowerCase().includes('quota')) {
-        throw new Error('QUOTA');
-      } else if (status === 400) {
-        throw new Error(`Solicitud inválida. Comprueba que tu API key es correcta. (${apiMessage})`);
-      } else if (status === 403) {
-        throw new Error('API key sin permisos. Verifica que tienes activada la API de Gemini en Google AI Studio.');
-      } else if (status === 404) {
-        throw new Error('Modelo no encontrado. Asegúrate de usar una API key de Google AI Studio (no de Google Cloud).');
-      } else {
-        throw new Error(`Error ${status}: ${apiMessage || 'Respuesta inesperada del servidor.'}`);
+      try {
+        const listResponse = await fetch(LIST_URL, {
+          headers: { 'X-goog-api-key': apiKey }
+        });
+
+        if (!listResponse.ok) {
+          const errData = await listResponse.json().catch(() => ({}));
+          const status = listResponse.status;
+          const apiMessage = errData?.error?.message || '';
+
+          if (status === 429 || apiMessage.toLowerCase().includes('quota')) {
+            quotaHits++;
+            lastError = new Error('QUOTA');
+            console.warn(`[Gemini] Cuota al listar modelos en ${version}.`);
+            continue;
+          }
+          if (status === 403) {
+            throw new Error('API key sin permisos. Verifica que tienes activada la API de Gemini en Google AI Studio y que no tiene restricciones de API/HTTP referrer.');
+          }
+
+          console.warn(`[Gemini] No se pudo listar modelos en ${version}: ${status} ${apiMessage}`);
+          continue;
+        }
+
+        const listData = await listResponse.json();
+        const models = Array.isArray(listData?.models) ? listData.models : [];
+
+        const available = models
+          .filter(m => Array.isArray(m?.supportedGenerationMethods) && m.supportedGenerationMethods.includes('generateContent'))
+          .map(m => (m?.name || '').replace(/^models\//, ''))
+          .filter(isTextModel)
+          .filter(Boolean)
+          .sort((a, b) => {
+            const score = name => {
+              const lower = name.toLowerCase();
+              if (lower === 'gemini-flash-latest') return 0;
+              if (lower.includes('2.0-flash-lite')) return 1;
+              if (lower.includes('2.0-flash')) return 2;
+              if (lower.includes('2.5-flash-lite')) return 3;
+              if (lower.includes('2.5-flash')) return 4;
+              if (lower.includes('1.5-flash')) return 5;
+              if (lower.includes('flash')) return 6;
+              if (lower.includes('pro')) return 7;
+              return 8;
+            };
+            return score(a) - score(b) || a.localeCompare(b);
+          });
+
+        console.log(`[Gemini] ${available.length} modelos con generateContent en ${version}.`);
+        if (available.length > 0) {
+          console.log(`[Gemini] Ejemplos en ${version}: ${available.slice(0, 6).join(', ')}`);
+        }
+
+        available.forEach(model => {
+          enqueueCandidate(version, model, 'discovered');
+        });
+
+      } catch (err) {
+        if (err.message === 'QUOTA' || err.message.includes('permisos')) {
+          throw err;
+        }
+        console.warn(`[Gemini] Error listando modelos en ${version}: ${err.message}`);
       }
     }
 
-    const data = await response.json();
-
-    // ── Extracción del texto ──
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!rawText) throw new Error('La API no devolvió contenido. Inténtalo de nuevo.');
-
-    // ── Limpieza robusta: eliminar cualquier cosa que no sea el JSON puro ──
-    // Estrategia: buscar el primer '[' y el último ']'
-    const jsonStart = rawText.indexOf('[');
-    const jsonEnd = rawText.lastIndexOf(']');
-
-    if (jsonStart === -1 || jsonEnd === -1 || jsonEnd <= jsonStart) {
-      throw new Error('No se encontró un JSON válido en la respuesta. Inténtalo de nuevo.');
+    // 2) Añadir fallback hardcoded (sin duplicados)
+    for (const version of API_VERSIONS) {
+      for (const model of FALLBACK_MODELS) {
+        enqueueCandidate(version, model, 'fallback');
+      }
     }
 
-    const cleanJson = rawText.substring(jsonStart, jsonEnd + 1);
-    const exercises = JSON.parse(cleanJson);
+    console.log(`[Gemini] Total candidatos a probar: ${candidates.length}`);
 
-    if (!Array.isArray(exercises) || exercises.length === 0) {
-      throw new Error('El formato de los ejercicios no es válido. Inténtalo de nuevo.');
+    // 3) Probar candidatos hasta que uno funcione
+    for (const candidate of candidates) {
+      const { version, model } = candidate;
+      const API_URL = `${API_HOST}/${version}/models/${model}:generateContent`;
+      console.log(`[Gemini] Intentando (${version}) con modelo: ${model}`);
+
+      try {
+        const response = await fetch(API_URL, {
+          method: 'POST',
+          headers: API_KEY_HEADERS,
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { temperature: 0.6, maxOutputTokens: 1200 }
+          })
+        });
+
+        if (!response.ok) {
+          const errData = await response.json().catch(() => ({}));
+          const status = response.status;
+          const apiMessage = errData?.error?.message || '';
+
+          if (status === 429 || apiMessage.toLowerCase().includes('quota')) {
+            quotaHits++;
+            lastError = new Error('QUOTA');
+            console.warn(`[Gemini] Cuota para ${model} (${version}), probando siguiente...`);
+            continue;
+          }
+          if (status === 403) {
+            throw new Error('API key sin permisos. Verifica que tienes activada la API de Gemini en Google AI Studio y que no tiene restricciones de API/HTTP referrer.');
+          }
+          if (status === 404) {
+            console.warn(`[Gemini] Modelo ${model} no disponible en ${version}, probando siguiente...`);
+            lastError = new Error(`Modelo ${model} no encontrado en ${version}.`);
+            continue;
+          }
+
+          throw new Error(`Error ${status}: ${apiMessage || 'Respuesta inesperada.'}`);
+        }
+
+        const data = await response.json();
+        const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (!rawText) throw new Error('La API no devolvio contenido. Intentalo de nuevo.');
+
+        // Extraer JSON limpio
+        const jsonStart = rawText.indexOf('[');
+        const jsonEnd = rawText.lastIndexOf(']');
+        if (jsonStart === -1 || jsonEnd === -1 || jsonEnd <= jsonStart) {
+          throw new Error('No se encontro un JSON valido en la respuesta.');
+        }
+
+        const parsed = JSON.parse(rawText.substring(jsonStart, jsonEnd + 1));
+        if (!Array.isArray(parsed) || parsed.length === 0) {
+          throw new Error('Array vacio en la respuesta.');
+        }
+        const valid = parsed.every(ex =>
+          typeof ex.phrase === 'string' &&
+          typeof ex.correct_answer === 'string' &&
+          typeof ex.explanation === 'string'
+        );
+        if (!valid) throw new Error('Formato de ejercicios incorrecto.');
+
+        console.log(`[Gemini] ✅ Exito con modelo: ${model} (${version})`);
+        exercises = parsed;
+        break;
+
+      } catch (err) {
+        if (err.message.includes('permisos')) {
+          throw err;
+        }
+        if (!err.message.includes('no encontrado') && !err.message.includes('no disponible')) {
+          lastError = err;
+        }
+      }
     }
 
-    // Validar que cada objeto tiene las claves esperadas
-    const valid = exercises.every(ex =>
-      typeof ex.phrase === 'string' &&
-      typeof ex.correct_answer === 'string' &&
-      typeof ex.explanation === 'string'
-    );
-    if (!valid) throw new Error('Algún ejercicio tiene un formato incorrecto. Regenera.');
+    if (!exercises) {
+      if (quotaHits > 0) {
+        throw new Error('QUOTA_PERSISTENT');
+      }
+      throw lastError || new Error('No se encontro ningun modelo Gemini usable para esta API key. Revisa si la key es de Google AI Studio y que no tenga restricciones.');
+    }
 
     currentExercises = exercises;
     renderExercises(exercises);
@@ -1301,6 +1453,8 @@ async function generateExercises() {
     let userMessage = '';
     if (err.message === 'QUOTA') {
       userMessage = '⏳ El servidor está saturado (límite de cuota). Espera 30 segundos y vuelve a intentarlo.';
+    } else if (err.message === 'QUOTA_PERSISTENT') {
+      userMessage = '⏳ Tu API key alcanzó el límite de cuota en todos los modelos probados. Espera unos minutos o cambia a una key/proyecto con más cuota disponible.';
     } else if (err.name === 'SyntaxError') {
       userMessage = '❌ La respuesta de la IA no era un JSON válido. Pulsa "Regenerar" para intentarlo de nuevo.';
     } else {
